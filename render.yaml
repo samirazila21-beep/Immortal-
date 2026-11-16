@@ -1,0 +1,6 @@
+services:
+    - type: web
+    name: immortal-breakthrough
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn server:app
